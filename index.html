@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      position: relative;
+      background-image: url(pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Red Hat Display', sans-serif;
+    }
+
+    .container {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      top: 120px;
+    }
+
+    img {
+      display: flex;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      width: 450px;
+    }
+
+    .container .card {
+      display: flex;
+      background: #fff;
+      height: 500px;
+      width: 450px;
+      box-shadow: 0 5px 20px -10px rgba(0, 0, 0, 0.8);
+                /* offset-x | offset-y | blur-radius | spread-radius | color */
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card h1 {
+      margin-top: 40px;
+    }
+
+    .card p {
+      text-align: center;
+      font-size: 16px;
+      margin: 10px 70px;
+      opacity: 0.8;
+      line-height: 25px;
+    }
+
+    .card .plan {
+      width: 75%;
+      height: 18%;
+      background: hsl(225, 100%, 98%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .plan img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .plan p {
+      margin: 0;
+      font-weight: 600;
+      text-align: justify;
+    }
+
+    .plan p span {
+      font-weight: lighter;
+    }
+
+    .card button{
+      width: 75%;
+      height: 10%;
+      background: hsl(245, 75%, 52%);
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+      margin-top: 20px;
+      box-shadow: 0 15px 25px -10px hsl(245, 75%, 52%); /* offset-x | offset-y | blur-radius | spread-radius | color */
+    }
+    .card .cancel{
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      margin-top: 30px;
+      opacity: 0.6;
+    }
+    
+
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="illustration-hero.svg" alt="hero">
+    <div class="card">
+      <h1>Order Summary</h1>
+      <p>You can now listen to millions of audiobooks, and podcasts on any
+        device anywhere you like!</p>
+        <div class="plan">
+          <img src="icon-music.svg" alt="">
+          <p>Annual Plan<br>
+            <span>$59.99/year</span>
+         </p>
+          <a href="#">Change</a>
+      </div>
+      <button>Proceed to Payment</button>
+      <a href="#" class="cancel">Cancel Order</a>
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Abdul-SJ">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
